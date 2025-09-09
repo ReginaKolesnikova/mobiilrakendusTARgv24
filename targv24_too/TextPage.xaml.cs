@@ -41,7 +41,7 @@ public partial class TekstPage : ContentPage
         Content = hsl;
 
     }
-    private void EditorTekst_TextChanged(object7 sender, TextChangedEventArgs e)
+    private void EditorTekst_TextChanged(object? sender, TextChangedEventArgs e)
     {
         lblTekst.Text=editorTekst.Text;
     }
