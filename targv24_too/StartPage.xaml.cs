@@ -20,10 +20,10 @@ public partial class StartPage : ContentPage
 				Text = tekstid[i],
 				FontSize = 20,
 				BackgroundColor = Color.FromRgb(200, 200, 100),
-					TextColor = Colors.Black,
-					CornerRadius = 20,
-					FontFamily="Lovin Kites 400",
-					ZIndex=i
+			    TextColor = Colors.Black,
+				CornerRadius = 20,
+				FontFamily="Lovin Kites 400",
+				ZIndex=i
 
             };
 			vsl.Add(nupp);
