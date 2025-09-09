@@ -1,9 +1,4 @@
-using static System.Net.Mime.MediaTypeNames;
-
 namespace targv24_too;
-
-
-
 
 public partial class TekstPage : ContentPage
 {
@@ -18,7 +13,6 @@ public partial class TekstPage : ContentPage
             FontSize = 20,
             TextColor = Colors.Black,
             FontFamily = "Lovin Kites 400"
-
         };
         editorTekst = new Editor
         {
