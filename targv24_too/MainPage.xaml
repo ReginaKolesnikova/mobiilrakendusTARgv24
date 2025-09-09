@@ -14,20 +14,21 @@
                 SemanticProperties.Description="dot net bot in a hovercraft number nine" />
 
             <Label
-                Text="Tere tulemast!"
+                Text="Tere tulemast Maui'sse!"
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" />
 
             <Label
-                Text="Click the button"
+                Text="Welcome to &#10;.NET Multi-platform App UI"
                 Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
 
             <Button
                 x:Name="CounterBtn"
-                Text="Vajuta nupp" 
+                Text="Vajuta siia" 
                 HeightRequest="100"
+                LineBreakMode="WordWrap"
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Fill" />
