@@ -4,8 +4,8 @@ namespace targv24_too;
 
 public partial class StartPage : ContentPage
 {
-	public List <ContentPage> lehed= new List<ContentPage>() { new TextPage(), new FigurePage(), new TimerPage()};
-	public List<string> tekstid= new List<string>() { "Tee lahti leht Text'iga", "Tee lahti Figure leht", "Tee lahti Timer leht" };
+	public List <ContentPage> lehed= new List<ContentPage>() { new TextPage(), new FigurePage(), new TimerPage(), new DateTimePage};
+	public List<string> tekstid= new List<string>() { "Tee lahti leht Text'iga", "Tee lahti Figure leht", "Tee lahti Timer leht", "Tee lahti DateTime leht" };
 	ScrollView sv;
 	VerticalStackLayout vsl;
 	public StartPage()
