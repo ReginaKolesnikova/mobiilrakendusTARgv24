@@ -10,9 +10,9 @@ public partial class DateTimePage : ContentPage
 	AbsoluteLayout al;
 	public DateTimePage()
 	{
-		mis_on_valitud = new Label();
+		mis_on_valitud = new Label
 		{
-			Text = "Siin kuvatakse valitud kuup‰ev vıi kellaeg",
+			Text = "Siin kuvatakse valitud kuup√§ev v√µi kellaeg",
 			FontSize = 20,
 			TextColor = Colors.White,
 			FontFamily = "Lovin Kites 400"
@@ -27,7 +27,7 @@ public partial class DateTimePage : ContentPage
 			Date = DateTime.Now,
 			Format="D"
         };
-		datePicker.DateSelected += Kuup‰eva_valimine;
+		datePicker.DateSelected += Kuup√§eva_valimine;
 		al = new AbsoluteLayout { Children = {mis_on_valitud, datePicker} };
 		AbsoluteLayout.SetLayoutBounds(mis_on_valitud, new Rect(0.5, 0.2, 0.9, 0.2));
 		AbsoluteLayout.SetLayoutFlags(mis_on_valitud, AbsoluteLayoutFlags.All);
@@ -35,8 +35,9 @@ public partial class DateTimePage : ContentPage
         AbsoluteLayout.SetLayoutFlags(datePicker, AbsoluteLayoutFlags.All);
     }
 
-	private void Kuup‰eva_valimine(object? sender, DateChangedEventArgs e)
+	private void Kuup√§eva_valimine(object? sender, DateChangedEventArgs e)
 	{
-		mis_on_valitud.Text = $"Valisite kuup‰eva: {e.NewDate:D}";
+		mis_on_valitud.Text = $"Valisite kuup√§eva: {e.NewDate:D}";
 	}
+
 }
